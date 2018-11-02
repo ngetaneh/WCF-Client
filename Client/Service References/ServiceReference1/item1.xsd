@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://MyCompany.Com/Department" elementFormDefault="qualified" targetNamespace="http://MyCompany.Com/Department" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8080/?xsd=xsd2" namespace="http://MyCompany.com/Department" />
+  <xs:element name="DepartmentRequestObject">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DepartmentName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LicenseKey" nillable="true" type="xs:string" />
+  <xs:element name="DeptartmentInfoObject">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://MyCompany.com/Department" minOccurs="0" ref="q1:ID" />
+        <xs:element xmlns:q2="http://MyCompany.com/Department" minOccurs="0" ref="q2:Name" />
+        <xs:element xmlns:q3="http://MyCompany.com/Department" minOccurs="0" ref="q3:Gender" />
+        <xs:element xmlns:q4="http://MyCompany.com/Department" minOccurs="0" ref="q4:DOB" />
+        <xs:element xmlns:q5="http://MyCompany.com/Department" minOccurs="0" ref="q5:Vacation" />
+        <xs:element xmlns:q6="http://MyCompany.com/Department" minOccurs="0" ref="q6:sickLeave" />
+        <xs:element xmlns:q7="http://MyCompany.com/Department" minOccurs="0" ref="q7:jobTitle" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

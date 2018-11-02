@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://MyCompany.com/Employee" elementFormDefault="qualified" targetNamespace="http://MyCompany.com/Employee" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8080/?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/EmployeeService" />
+  <xs:element name="ID" type="xs:int" />
+  <xs:element name="Name" nillable="true" type="xs:string" />
+  <xs:element name="Gender" nillable="true" type="xs:string" />
+  <xs:element name="DOB" type="xs:dateTime" />
+  <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/EmployeeService" name="Type" type="q1:EmployeeType" />
+  <xs:element name="AnnualSalary" type="xs:int" />
+  <xs:element name="HourlyPay" type="xs:int" />
+  <xs:element name="HoursWorked" type="xs:int" />
+</xs:schema>
